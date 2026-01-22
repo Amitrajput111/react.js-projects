@@ -1,18 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import ErrorMessage from "./components/ErrorMessage";
 import FoodItems from "./components/FoodItems";
 
 function App() {
-  //let foodItems = {};
-
   let foodItems = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk"];
   return (
     <>
-      <div>
-        <h1>Healthy Food </h1>
-        {foodItems.length === 0 && <h3> I am still hungrry</h3>}
-        <FoodItems />
-      </div>
+      <h1>Healthy Food </h1>
+      <ErrorMessage items={foodItems}> </ErrorMessage>
+      <FoodItems items={foodItems}> </FoodItems>
     </>
   );
 }

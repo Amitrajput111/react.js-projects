@@ -5,6 +5,18 @@ import TodoItem2 from "./components/TodoItem1";
 import "./App.css";
 
 function App() {
+
+  const todoItems = [
+    {
+      name: "Buy Milk",
+      dueDate: "4/10/2023",
+    },
+    {
+      name: "Go to Collage",
+      dueDate: "4/10/2023",
+    }
+  ];
+  
   return (
     <div class="container text center">
       <AppName />
